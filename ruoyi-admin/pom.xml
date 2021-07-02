@@ -67,6 +67,13 @@
             <artifactId>ruoyi-generator</artifactId>
         </dependency>
 
+        <!-- acviti模块 -->
+        <dependency>
+            <groupId>com.ruoyi</groupId>
+            <artifactId>ruoyi-activiti</artifactId>
+            <version>4.6.1</version>
+        </dependency>
+
     </dependencies>
 
     <build>

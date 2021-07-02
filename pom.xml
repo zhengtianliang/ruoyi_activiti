@@ -32,6 +32,7 @@
         <commons.fileupload.version>1.4</commons.fileupload.version>
         <poi.version>4.1.2</poi.version>
         <velocity.version>1.7</velocity.version>
+        <activiti.version>6.0.0</activiti.version>
     </properties>
 
     <!-- 依赖声明 -->
@@ -228,6 +229,7 @@
         <module>ruoyi-quartz</module>
         <module>ruoyi-generator</module>
         <module>ruoyi-common</module>
+        <module>ruoyi-activiti</module>
     </modules>
     <packaging>pom</packaging>
 

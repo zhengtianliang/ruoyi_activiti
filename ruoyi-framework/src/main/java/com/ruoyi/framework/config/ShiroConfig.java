@@ -290,6 +290,11 @@ public class ShiroConfig
         // 系统权限列表
         // filterChainDefinitionMap.putAll(SpringUtils.getBean(IMenuService.class).selectPermsAll());
 
+        // 下面这三是 activiti的url放行
+        filterChainDefinitionMap.put("/modeler/**", "anon"); // modeler 流程在线设计器
+        filterChainDefinitionMap.put("/repository/**", "anon");
+        filterChainDefinitionMap.put("/runtime/**", "anon");
+
         Map<String, Filter> filters = new LinkedHashMap<String, Filter>();
         filters.put("onlineSession", onlineSessionFilter());
         filters.put("syncOnlineSession", syncOnlineSessionFilter());

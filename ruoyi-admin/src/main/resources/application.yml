@@ -70,6 +70,13 @@ spring:
       # 热部署开关
       enabled: true
 
+  # activiti模块
+  activiti:
+    # 是否检查流程定义，默认会去resouce文件夹下面找一个processes的目录，从这个目录下查找流程定义文件。false的话，就不用加processes文件夹了
+    check-process-definitions: false
+    # 检验身份信息表是否存在，false的话，创建activiti28张表的时候，会省略掉身份信息相关的表
+    db-identity-used: false
+
 # MyBatis
 mybatis:
     # 搜索指定包别名
